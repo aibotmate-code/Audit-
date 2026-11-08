@@ -75,7 +75,7 @@ Present: LocalBusiness+ProfessionalService, Organization, WebSite, WebPage, Brea
 | All `@id`/`url` on non-www host | High | Use `https://www.intellicallabs.com/#business` etc. |
 | Postal code 243005 vs 243001 (llms.txt) | High | Make it consistent everywhere, including GBP |
 | `SearchAction` to `/?s=` (no site search) | Medium | Remove |
-| FAQPage on every page | Low | Google stopped showing FAQ rich results for most sites in 2023 (2026-05-07 per current tooling); it's harmless entity markup but shouldn't drive decisions. Keep only where FAQs are visible (they are). |
+| FAQPage on every page | Low | Google limited FAQ rich results to government/health sites in 2023 and ended them on 2026-05-07, so this markup no longer earns a SERP feature. It is harmless entity markup. Keep only where FAQs are visible (they are). |
 | `speakable` targets `#hero`, `#faq`, which don't exist on inner pages | Low | Point at real selectors, or remove (Speakable is still beta and news-only) |
 | Footer microdata `LocalBusiness` (name, phone only) duplicates the JSON-LD entity | Low | Remove the microdata |
 | BlogPosting `author` = Organization | Medium | Use `Person` with `url` and `sameAs` (LinkedIn) |
