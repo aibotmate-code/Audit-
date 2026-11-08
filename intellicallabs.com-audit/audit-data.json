@@ -1,0 +1,228 @@
+{
+  "summary": {
+    "health_score": 67,
+    "business_type": "Local service-area business — digital marketing agency (Bareilly, UP)",
+    "top_findings": [
+      "GA4 split across G-536888633 / G-FJJDNKHL9W; missing on /ai-marketing-agency-bareilly",
+      "hreflang & JSON-LD use non-www while canonicals are www",
+      "Postal code 243005 (schema) vs 243001 (llms.txt); no street address on pages",
+      "No people, testimonials or case studies; unverifiable '#1/First/Only' claims",
+      "4 of 7 blog cards are not real articles"
+    ],
+    "quick_wins": [
+      "Unify GA4 ID",
+      "Switch all URLs to www",
+      "Fix postal code + footer address",
+      "Remove SearchAction",
+      "Shorten homepage title, keyword H1"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 72,
+      "what_works": [
+        "HTTPS",
+        "robots allows all",
+        "sitemap lists 14 URLs",
+        "self canonicals"
+      ],
+      "findings": [
+        {
+          "title": "Split/missing GA4",
+          "severity": "High",
+          "description": "5 pages use G-536888633, 1 page none",
+          "recommendation": "Use G-FJJDNKHL9W everywhere"
+        },
+        {
+          "title": "Non-www hreflang/entity URLs",
+          "severity": "High",
+          "description": "Conflicts with www canonical",
+          "recommendation": "Use www everywhere"
+        },
+        {
+          "title": "Stale sitemap lastmod",
+          "severity": "Low",
+          "description": "10 URLs at 2025-08-22",
+          "recommendation": "Real lastmod"
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 58,
+      "what_works": [
+        "Distinct city pages",
+        "Quick Answer blocks",
+        "Honest timelines"
+      ],
+      "findings": [
+        {
+          "title": "No author/team E-E-A-T",
+          "severity": "High",
+          "description": "No About page or person authors",
+          "recommendation": "About page + Person authors"
+        },
+        {
+          "title": "Unverifiable superlatives",
+          "severity": "High",
+          "description": "#1/First/Only claims",
+          "recommendation": "Provable claims"
+        },
+        {
+          "title": "Fake blog cards",
+          "severity": "High",
+          "description": "4 of 7 cards are CTAs",
+          "recommendation": "Remove or write posts"
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO",
+      "score": 70,
+      "what_works": [
+        "Keyworded service H1s",
+        "Breadcrumbs"
+      ],
+      "findings": [
+        {
+          "title": "Homepage H1 lacks keyword",
+          "severity": "Medium",
+          "description": "'Most businesses don't have a content problem.'",
+          "recommendation": "Digital Marketing Agency in Bareilly…"
+        },
+        {
+          "title": "Long titles/descriptions",
+          "severity": "Medium",
+          "description": "Titles 79–94 chars",
+          "recommendation": "≤60 / ≤155"
+        }
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 68,
+      "what_works": [
+        "Valid JSON-LD on all pages",
+        "LocalBusiness, Service, BlogPosting"
+      ],
+      "findings": [
+        {
+          "title": "Invalid SearchAction",
+          "severity": "Medium",
+          "description": "/?s= search does not exist",
+          "recommendation": "Remove"
+        },
+        {
+          "title": "Org as author",
+          "severity": "Medium",
+          "description": "BlogPosting author Organization",
+          "recommendation": "Person"
+        }
+      ]
+    },
+    {
+      "name": "Performance (CWV)",
+      "score": 65,
+      "what_works": [
+        "Inline critical CSS"
+      ],
+      "findings": [
+        {
+          "title": "Not measured",
+          "severity": "Info",
+          "description": "No PSI/CrUX access",
+          "recommendation": "Run PSI mobile"
+        },
+        {
+          "title": "Heavy fonts",
+          "severity": "Medium",
+          "description": "3 families, loaded twice on home",
+          "recommendation": "2 families, self-host"
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness",
+      "score": 80,
+      "what_works": [
+        "AI bots allowed",
+        "llms.txt",
+        "answer blocks"
+      ],
+      "findings": [
+        {
+          "title": "Few third-party mentions",
+          "severity": "Medium",
+          "description": "Self-claims uncorroborated",
+          "recommendation": "Directory and press profiles"
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "score": 55,
+      "what_works": [
+        "Alt text present"
+      ],
+      "findings": [
+        {
+          "title": "No real photos",
+          "severity": "Medium",
+          "description": "Only logo images",
+          "recommendation": "Team/office/work photos"
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Phase 1: Critical Fixes",
+        "timeframe": "Week 1",
+        "items": [
+          "Unify GA4",
+          "www everywhere",
+          "Fix NAP",
+          "Remove fake blog cards",
+          "Remove SearchAction"
+        ]
+      },
+      {
+        "name": "Phase 2: High-Impact Improvements",
+        "timeframe": "Weeks 2-3",
+        "items": [
+          "Titles/H1",
+          "Replace superlatives",
+          "About page + Person authors",
+          "Testimonials",
+          "Source stats",
+          "Fonts/images"
+        ]
+      },
+      {
+        "name": "Phase 3: Content & Authority",
+        "timeframe": "Month 2",
+        "items": [
+          "Case studies",
+          "4 cluster posts",
+          "Citations",
+          "Real photos"
+        ]
+      },
+      {
+        "name": "Phase 4: Monitoring & Iteration",
+        "timeframe": "Ongoing",
+        "items": [
+          "GSC",
+          "PSI monthly",
+          "Re-audit in 60 days"
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/"
+  }
+}

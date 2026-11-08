@@ -1,0 +1,1 @@
+Per-category findings are consolidated in ../FULL-AUDIT-REPORT.md (Technical, Content, On-Page, Schema, Performance, Images, AI Search Readiness). Screenshots were not captured; Playwright couldn't reach the site from the audit environment.
